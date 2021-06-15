@@ -52,14 +52,14 @@ class Body extends StatelessWidget {
                       style: Theme.of(context).textTheme.headline6,
                     ),
                   ),
-                  Text(
-                    '\$${product.price}',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.w600,
-                      color: kSecondaryColor,
-                    ),
-                  ),
+                  // Text(
+                  //   '\$${product.price}',
+                  //   style: TextStyle(
+                  //     fontSize: 18,
+                  //     fontWeight: FontWeight.w600,
+                  //     color: kSecondaryColor,
+                  //   ),
+                  // ),
                   Padding(
                     padding:
                         EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
