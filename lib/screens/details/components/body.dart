@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:green_cosmetics/constants.dart';
 import 'package:green_cosmetics/models/product.dart';
 
-import 'chat_and_add_to_cart.dart';
-import 'list_of_colors.dart';
+// import 'chat_and_add_to_cart.dart';
+// import 'list_of_colors.dart';
 import 'product_image.dart';
 
 class Body extends StatelessWidget {
@@ -43,7 +43,7 @@ class Body extends StatelessWidget {
                       ),
                     ),
                   ),
-                  ListOfColors(),
+                  // ListOfColors(),
                   Padding(
                     padding: const EdgeInsets.symmetric(
                         vertical: kDefaultPadding / 2),
@@ -72,7 +72,7 @@ class Body extends StatelessWidget {
                 ],
               ),
             ),
-            ChatAndAddToCart(),
+            // ChatAndAddToCart(),
           ],
         ),
       ),

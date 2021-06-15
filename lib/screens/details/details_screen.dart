@@ -36,12 +36,12 @@ class DetailsScreen extends StatelessWidget {
         'Back'.toUpperCase(),
         style: Theme.of(context).textTheme.bodyText2,
       ),
-      actions: <Widget>[
-        IconButton(
-          icon: SvgPicture.asset('assets/icons/cart_with_item.svg'),
-          onPressed: () {},
-        ),
-      ],
+      // actions: <Widget>[
+      //   IconButton(
+      //     icon: SvgPicture.asset('assets/icons/cart_with_item.svg'),
+      //     onPressed: () {},
+      //   ),
+      // ],
     );
   }
 }

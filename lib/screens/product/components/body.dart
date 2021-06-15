@@ -4,7 +4,7 @@ import 'package:green_cosmetics/constants.dart';
 import 'package:green_cosmetics/models/product.dart';
 import 'package:green_cosmetics/screens/details/details_screen.dart';
 
-import 'category_list.dart';
+// import 'category_list.dart';
 import 'product_card.dart';
 
 class Body extends StatelessWidget {
@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SearchBox(onChanged: (value) {}),
-          CategoryList(),
+          // CategoryList(),
           SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(
