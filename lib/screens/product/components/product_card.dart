@@ -24,6 +24,7 @@ class ProductCard extends StatelessWidget {
         horizontal: kDefaultPadding,
         vertical: kDefaultPadding / 2,
       ),
+      // color: Colors.blueAccent,
       height: 160,
       child: InkWell(
         onTap: press,
@@ -54,9 +55,9 @@ class ProductCard extends StatelessWidget {
                 tag: '${product.id}',
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  height: 190,
+                  height: 160,
                   // image is square but we add extra 20 + 20 padding thats why width is 200
-                  width: 170,
+                  width: 200,
                   child: Image.asset(
                     product.image,
                     fit: BoxFit.cover,
@@ -69,9 +70,9 @@ class ProductCard extends StatelessWidget {
               bottom: 0,
               left: 0,
               child: SizedBox(
-                height: 142,
+                height: 136,
                 // our image take 200 width, thats why we set out total width - 200
-                width: size.width - 220,
+                width: size.width - 200,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
@@ -81,8 +82,7 @@ class ProductCard extends StatelessWidget {
                           horizontal: kDefaultPadding),
                       child: Text(
                         product.title,
-                        style : TextStyle(fontSize: 20),
-                        // style: Theme.of(context).textTheme.button,
+                        style: Theme.of(context).textTheme.button,
                       ),
                     ),
                     // it use the available space
@@ -100,10 +100,10 @@ class ProductCard extends StatelessWidget {
                         ),
                       ),
                       // child: Text(
-                      //   "\₹${product.price}",
-                      //   style: TextStyle(color: Colors.white),
-                      //   // style: Theme.of(context).textTheme.button,
-                      // ),
+                      // "\₹${product.price}",
+                      //style: TextStyle(color: Colors.white),
+                      // style: Theme.of(context).textTheme.button,
+                      //),
                     ),
                   ],
                 ),

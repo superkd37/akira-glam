@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:green_cosmetics/components/search_box.dart';
+//import 'package:green_cosmetics/components/search_box.dart';
 import 'package:green_cosmetics/constants.dart';
 import 'package:green_cosmetics/models/product.dart';
 import 'package:green_cosmetics/screens/details/details_screen.dart';

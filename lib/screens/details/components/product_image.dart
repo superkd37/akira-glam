@@ -23,17 +23,21 @@ class ProductPoster extends StatelessWidget {
         alignment: Alignment.bottomCenter,
         children: <Widget>[
           Container(
-            height: size.width * 0.85,
-            width: size.width * 0.85,
+            height: size.width * 0.7,
+            width: size.width * 0.7,
             decoration: BoxDecoration(
               color: Colors.white,
               shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.black,
+                width: 0.2,
+              )
             ),
           ),
           Image.asset(
             image,
             height: size.width * 0.75,
-            width: size.width * 0.7,
+            width: size.width * 0.75,
             fit: BoxFit.cover,
           ),
         ],
