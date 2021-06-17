@@ -99,11 +99,11 @@ class ProductCard extends StatelessWidget {
                           topRight: Radius.circular(22),
                         ),
                       ),
-                      child: Text(
-                        "\₹${product.price}",
-                        style: TextStyle(color: Colors.white),
-                        // style: Theme.of(context).textTheme.button,
-                      ),
+                      // child: Text(
+                      // "\₹${product.price}",
+                      //style: TextStyle(color: Colors.white),
+                      // style: Theme.of(context).textTheme.button,
+                      //),
                     ),
                   ],
                 ),

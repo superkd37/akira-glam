@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:green_cosmetics/components/SecondScreen.dart';
+
+ import 'SecondScreen.dart';
+
 
 import '../constants.dart';
 
 class SearchBox extends StatelessWidget {
-  const SearchBox({
-    Key key,
-    this.onChanged,
-  }) : super(key: key);
-
-  final ValueChanged onChanged;
 
   @override
   Widget build(BuildContext context) {
@@ -20,20 +17,24 @@ class SearchBox extends StatelessWidget {
         vertical: kDefaultPadding / 4, // 5 top and bottom
       ),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.4),
-        borderRadius: BorderRadius.circular(12),
+        color: kBackgroundColor,
+        borderRadius: BorderRadius.circular(20),
+        
       ),
-      child: TextField(
-        onChanged: onChanged,
-        style: TextStyle(color: Colors.white),
-        decoration: InputDecoration(
-          enabledBorder: InputBorder.none,
-          focusedBorder: InputBorder.none,
-          icon: SvgPicture.asset("assets/icons/search.svg"),
-          hintText: 'Search',
-          hintStyle: TextStyle(color: Colors.white),
-        ),
-      ),
-    );
+    
+      child: GestureDetector(
+        child: Text('INTRODUCTION',  
+          style: TextStyle(color: kPrimaryColor),
+      
+          ),
+         
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => SecondScreen()));
+        },
+                  )
+      ); 
+        
+     
+    
   }
 }

@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
       bottom: false,
       child: Column(
         children: <Widget>[
-          SearchBox(onChanged: (value) {}),
+          SearchBox(),
           // CategoryList(),
           SizedBox(height: kDefaultPadding / 2),
           Expanded(
