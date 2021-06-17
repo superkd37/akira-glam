@@ -1,8 +1,8 @@
 class Product {
   final int id, price;
-  final String title, description, image;
+  final String title, description, image, alternative1, alternative2, alternative3;
 
-  Product({this.id, this.price, this.title, this.description, this.image});
+  Product({this.id, this.price, this.title, this.description, this.image, this.alternative1, this.alternative2, this.alternative3});
 }
 
 // list of products
@@ -15,6 +15,9 @@ List<Product> products = [
     image: "assets/images/Item_1.png",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+    alternative1: "Type in alternative 1",
+    alternative2: "Type in alternative 2",
+    alternative3: "Type in alternative 3",
   ),
   Product(
     id: 2,
@@ -23,6 +26,9 @@ List<Product> products = [
     image: "assets/images/Item_2.png",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+    alternative1: "Type in alternative 1",
+    alternative2: "Type in alternative 2",
+    alternative3: "Type in alternative 3",
   ),
   Product(
     id: 3,
@@ -31,6 +37,9 @@ List<Product> products = [
     image: "assets/images/Item_3.png",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+    alternative1: "Type in alternative 1",
+    alternative2: "Type in alternative 2",
+    alternative3: "Type in alternative 3",
   ),
   Product(
     id: 4,
@@ -39,6 +48,9 @@ List<Product> products = [
     image: "assets/images/Item_4.png",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+    alternative1: "Type in alternative 1",
+    alternative2: "Type in alternative 2",
+    alternative3: "Type in alternative 3",
   ),
   Product(
     id: 5,
@@ -47,61 +59,8 @@ List<Product> products = [
     image: "assets/images/Item_5.png",
     description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 6,
-    price: 129,
-    title: "Eyeliners",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 7,
-    price: 129,
-    title: "Lipsticks",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 8,
-    price: 129,
-    title: "Nail Polishes & Enamel",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 9,
-    price: 129,
-    title: "Facial Kits",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 10,
-    price: 129,
-    title: "Bath & Body Oils",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 11,
-    price: 129,
-    title: "Body Lotions & Creams",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
-  ),
-  Product(
-    id: 12,
-    price: 129,
-    title: "Body Wash & Shower Gels",
-    image: "assets/images/Item_5.png",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim",
+    alternative1: "Type in alternative 1",
+    alternative2: "Type in alternative 2",
+    alternative3: "Type in alternative 3",
   ),
 ];
