@@ -28,6 +28,12 @@ flutter run
 ## Long description
 [Project Description](./DESCRIPTION.md)
 
+## Authors
+Krishnadas Babu
+Kalyani Joshy
+Manya Shaji
+Kiran Manoj
+Hisana M R
 
 ## License
-This project is licensed under the Apache 2 License.
+This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
