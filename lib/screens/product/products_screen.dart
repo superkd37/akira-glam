@@ -16,9 +16,10 @@ class ProductsScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-      elevation: 0,
+      elevation: 5,
+      toolbarHeight: 65,
       centerTitle: true,
-      title: Text('Akira Glam'),
+      title: Text('Akira Glam', style: TextStyle(fontSize: 22)),
       // actions: <Widget>[
       //   IconButton(
       //     icon: SvgPicture.asset("assets/icons/notification.svg"),

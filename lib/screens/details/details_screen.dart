@@ -33,8 +33,12 @@ class DetailsScreen extends StatelessWidget {
       ),
       centerTitle: false,
       title: Text(
-        'Back'.toUpperCase(),
-        style: Theme.of(context).textTheme.bodyText2,
+        'Home',
+        style: TextStyle(
+          fontSize: 18,
+          color: Colors.black
+          ),
+        // style: Theme.of(context).textTheme.bodyText2,
       ),
       // actions: <Widget>[
       //   IconButton(

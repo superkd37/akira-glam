@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Furniture app',
+      title: 'Green Cosmetics',
       theme: ThemeData(
         // We set Poppins as our default font
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),

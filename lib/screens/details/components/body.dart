@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:green_cosmetics/constants.dart';
 import 'package:green_cosmetics/models/product.dart';
@@ -27,11 +25,7 @@ class Body extends StatelessWidget {
               padding: EdgeInsets.all(10),
               decoration: BoxDecoration(
                 color: kBackgroundColor,
-                borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(100),
-                    bottomRight: Radius.circular(100),
-                    topLeft: Radius.circular(100),
-                    topRight: Radius.circular(100)),
+                borderRadius: BorderRadius.circular(30),
               ),
               child: Column(
                 children: <Widget>[
@@ -65,23 +59,17 @@ class Body extends StatelessWidget {
                     padding: EdgeInsets.all(40.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(100),
-                          bottomRight: Radius.circular(100),
-                          topLeft: Radius.circular(100),
-                          topRight: Radius.circular(100)),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     child: Text(
                       product.description,
-                      style: TextStyle(
-                        color: kPrimaryColor,
-                      ),
+                      style: TextStyle(color: kPrimaryColor, fontSize: 18),
                     ),
                   ),
                   Container(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
-                      "ALTERNATIVES",
+                      "Alternatives",
                       style: TextStyle(color: kPrimaryColor, fontSize: 24),
                     ),
                   ),
@@ -90,17 +78,14 @@ class Body extends StatelessWidget {
                     padding: EdgeInsets.all(40.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(100),
-                          bottomRight: Radius.circular(100),
-                          topLeft: Radius.circular(100),
-                          topRight: Radius.circular(100)),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     child: Text(
-                      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                      product.alternative1,
                       style: TextStyle(
                           color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor),
+                          backgroundColor: kSecondaryColor,
+                          fontSize: 18),
                     ),
                   ),
                   SizedBox(height: 10.0),
@@ -108,17 +93,14 @@ class Body extends StatelessWidget {
                     padding: EdgeInsets.all(40.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(100),
-                          bottomRight: Radius.circular(100),
-                          topLeft: Radius.circular(100),
-                          topRight: Radius.circular(100)),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     child: Text(
-                      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                      product.alternative2,
                       style: TextStyle(
                           color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor),
+                          backgroundColor: kSecondaryColor,
+                          fontSize: 18),
                     ),
                   ),
                   SizedBox(height: 10.0),
@@ -127,17 +109,14 @@ class Body extends StatelessWidget {
                     padding: EdgeInsets.all(40.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
-                      borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(100),
-                          bottomRight: Radius.circular(100),
-                          topLeft: Radius.circular(100),
-                          topRight: Radius.circular(100)),
+                      borderRadius: BorderRadius.circular(30),
                     ),
                     child: Text(
-                      "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                      product.alternative3,
                       style: TextStyle(
                           color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor),
+                          backgroundColor: kSecondaryColor,
+                          fontSize: 18),
                     ),
                   ),
                   SizedBox(height: 10.0),
