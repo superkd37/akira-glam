@@ -23,4 +23,4 @@ flutter run
 ```
 
 ## Demo Video
-[!Watch the video](https://www.youtube.com/watch?v=jkBfGvb7NzM)
+[![Watch the video]](https://www.youtube.com/watch?v=jkBfGvb7NzM)
