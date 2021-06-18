@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:green_cosmetics/models/product.dart';
+import 'package:akira_glam/models/product.dart';
 
 import '../../../constants.dart';
 
@@ -17,7 +17,6 @@ class ProductCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // It  will provide us total height and width of our screen
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.symmetric(
@@ -30,12 +29,11 @@ class ProductCard extends StatelessWidget {
         child: Stack(
           alignment: Alignment.bottomCenter,
           children: <Widget>[
-            // Those are our background
             Container(
               height: 136,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(22),
-                color: itemIndex.isEven ? kBlueColor : kSecondaryColor,
+                color: itemIndex.isEven ? kBlueColor : kBlueColor,
                 boxShadow: [kDefaultShadow],
               ),
               child: Container(
@@ -46,17 +44,15 @@ class ProductCard extends StatelessWidget {
                 ),
               ),
             ),
-            // our product image
             Positioned(
-              top: 0,
-              right: 0,
+              bottom: 0,
+              right: 25,
               child: Hero(
                 tag: '${product.id}',
                 child: Container(
                   padding: EdgeInsets.symmetric(horizontal: kDefaultPadding),
-                  height: 190,
-                  // image is square but we add extra 20 + 20 padding thats why width is 200
-                  width: 170,
+                  height: 170,
+                  width: 125,
                   child: Image.asset(
                     product.image,
                     fit: BoxFit.cover,
@@ -64,13 +60,11 @@ class ProductCard extends StatelessWidget {
                 ),
               ),
             ),
-            // Product title and price
             Positioned(
               bottom: 0,
               left: 0,
               child: SizedBox(
                 height: 142,
-                // our image take 200 width, thats why we set out total width - 200
                 width: size.width - 220,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -82,28 +76,21 @@ class ProductCard extends StatelessWidget {
                       child: Text(
                         product.title,
                         style : TextStyle(fontSize: 20),
-                        // style: Theme.of(context).textTheme.button,
                       ),
                     ),
-                    // it use the available space
                     Spacer(),
                     Container(
                       padding: EdgeInsets.symmetric(
-                        horizontal: kDefaultPadding * 1.5, // 30 padding
-                        vertical: kDefaultPadding / 4, // 5 top and bottom
+                        horizontal: kDefaultPadding * 1.5, 
+                        vertical: kDefaultPadding / 4, 
                       ),
                       decoration: BoxDecoration(
-                        color: kSecondaryColor,
+                        color: kBlueColor,
                         borderRadius: BorderRadius.only(
                           bottomLeft: Radius.circular(22),
                           topRight: Radius.circular(22),
                         ),
                       ),
-                      // child: Text(
-                      //   "\₹${product.price}",
-                      //   style: TextStyle(color: Colors.white),
-                      //   // style: Theme.of(context).textTheme.button,
-                      // ),
                     ),
                   ],
                 ),

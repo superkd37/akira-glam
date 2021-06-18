@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:green_cosmetics/components/search_box.dart';
-import 'package:green_cosmetics/constants.dart';
-import 'package:green_cosmetics/models/product.dart';
-import 'package:green_cosmetics/screens/details/details_screen.dart';
-
-// import 'category_list.dart';
+import 'package:akira_glam/components/search_box.dart';
+import 'package:akira_glam/constants.dart';
+import 'package:akira_glam/models/product.dart';
+import 'package:akira_glam/screens/details/details_screen.dart';
 import 'product_card.dart';
 
 class Body extends StatelessWidget {
@@ -15,7 +13,6 @@ class Body extends StatelessWidget {
       child: Column(
         children: <Widget>[
           SearchBox(),
-          // CategoryList(),
           SizedBox(height: kDefaultPadding / 2),
           Expanded(
             child: Stack(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/svg.dart';
-import 'package:green_cosmetics/constants.dart';
+import 'package:akira_glam/constants.dart';
 
 import 'components/body.dart';
 
@@ -20,12 +19,6 @@ class ProductsScreen extends StatelessWidget {
       toolbarHeight: 65,
       centerTitle: true,
       title: Text('Akira Glam', style: TextStyle(fontSize: 22)),
-      // actions: <Widget>[
-      //   IconButton(
-      //     icon: SvgPicture.asset("assets/icons/notification.svg"),
-      //     onPressed: () {},
-      //   ),
-      // ],
     );
   }
 }

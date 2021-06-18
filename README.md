@@ -1,11 +1,11 @@
-# Green Cosmetics
+# Akira Glam
 
 A Flutter application to guide users to cosmetic products that are equally sustainable and not harmful to the human body.
 
 ### Current Features:
 * Listing of products
-* Search
 * Suggest greener alternatives
+* Each alternative product button redirects you to shopping link
 
 ### 1. Clone this repository
 ```bash

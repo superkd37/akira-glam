@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:green_cosmetics/constants.dart';
-import 'package:green_cosmetics/models/product.dart';
-
+import 'package:akira_glam/constants.dart';
+import 'package:akira_glam/models/product.dart';
 import 'components/body.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -38,14 +37,7 @@ class DetailsScreen extends StatelessWidget {
           fontSize: 18,
           color: Colors.black
           ),
-        // style: Theme.of(context).textTheme.bodyText2,
       ),
-      // actions: <Widget>[
-      //   IconButton(
-      //     icon: SvgPicture.asset('assets/icons/cart_with_item.svg'),
-      //     onPressed: () {},
-      //   ),
-      // ],
     );
   }
 }

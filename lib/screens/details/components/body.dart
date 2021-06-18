@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:green_cosmetics/constants.dart';
-import 'package:green_cosmetics/models/product.dart';
-
-// import 'chat_and_add_to_cart.dart';
-// import 'list_of_colors.dart';
-//import 'product_image.dart';
+import 'package:akira_glam/constants.dart';
+import 'package:akira_glam/models/product.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Body extends StatelessWidget {
   final Product product;
@@ -12,9 +9,7 @@ class Body extends StatelessWidget {
   const Body({Key key, this.product}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // it provide us total height and width
-    // Size size = MediaQuery.of(context).size;
-    // it enable scrolling on small devices
+
     return SafeArea(
       bottom: false,
       child: SingleChildScrollView(
@@ -29,15 +24,6 @@ class Body extends StatelessWidget {
               ),
               child: Column(
                 children: <Widget>[
-                  //child: Hero(
-                  // tag: '${product.id}',
-                  // child: ProductPoster(
-                  // size: size,
-                  // image: product.image,
-                  //),
-                  // ),
-
-                  // ListOfColors(),
                   Container(
                     padding: const EdgeInsets.all(30.0),
                     child: Text(
@@ -45,15 +31,6 @@ class Body extends StatelessWidget {
                       style: TextStyle(color: kPrimaryColor, fontSize: 24),
                     ),
                   ),
-
-                  // Text(
-                  // '\$${product.price}',
-                  // style: TextStyle(
-                  //fontSize: 18,
-                  //fontWeight: FontWeight.w600,
-                  //color: kSecondaryColor,
-                  // ),
-                  //),
 
                   Container(
                     padding: EdgeInsets.all(40.0),
@@ -63,9 +40,7 @@ class Body extends StatelessWidget {
                     ),
                     child: Text(
                       product.description,
-                      style: TextStyle(
-                        color: kPrimaryColor, fontSize: 18
-                      ),
+                      style: TextStyle(color: kPrimaryColor, fontSize: 18),
                     ),
                   ),
                   Container(
@@ -76,58 +51,110 @@ class Body extends StatelessWidget {
                     ),
                   ),
 
-                  Container(
-                    padding: EdgeInsets.all(40.0),
+                  Container(                   
+                    padding: EdgeInsets.all(30.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text(
-                      product.alternative1,
-                      style: TextStyle(
-                          color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor,
-                          fontSize: 18
-                          ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        primary: Colors.pink[100],
+                      ),
+                      child: Center(
+                        child: Text(
+                        product.alternative1,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: kPrimaryColor,
+                            backgroundColor: kSecondaryColor,
+                            fontSize: 18),
                     ),
+                      ),
+                      onPressed: () async{
+                        String url = product.site1;
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        }else{
+                          throw 'could not launch $url';
+                          
+                        }
+                      }, 
+                    )
+                      
                   ),
                   SizedBox(height: 10.0),
                   Container(
-                    padding: EdgeInsets.all(40.0),
+                    padding: EdgeInsets.all(30.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text(
-                      product.alternative2,
-                      style: TextStyle(
-                          color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor,
-                          fontSize: 18
-                          ),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        primary: Colors.pink[100],
+                      ),
+                      child: Center(
+                        child: Text(
+                        product.alternative2,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: kPrimaryColor,                           
+                            backgroundColor: kSecondaryColor,
+                            fontSize: 18),
                     ),
+                      ),
+                      onPressed: () async{
+                        String url = product.site2;
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        }else{
+                          throw 'could not launch $url';
+                          
+                        }
+                      }, 
+                    )
+                      
                   ),
+                    
                   SizedBox(height: 10.0),
 
                   Container(
-                    padding: EdgeInsets.all(40.0),
+                    padding: EdgeInsets.all(30.0),
                     decoration: BoxDecoration(
                       color: kSecondaryColor,
                       borderRadius: BorderRadius.circular(30),
                     ),
-                    child: Text(
-                      product.alternative3,
-                      style: TextStyle(
-                          color: kPrimaryColor,
-                          backgroundColor: kSecondaryColor,
-                          fontSize: 18),
+                    child: TextButton(
+                      style: TextButton.styleFrom(
+                        primary: Colors.pink[100],
+                      ),
+                      child: Center(
+                        child: Text(
+                        product.alternative3,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: kPrimaryColor,
+                            backgroundColor: kSecondaryColor,
+                            fontSize: 18),
                     ),
+                      ),
+                      onPressed: () async{
+                        String url = product.site3;
+                        if (await canLaunch(url)) {
+                          await launch(url);
+                        }else{
+                          throw 'could not launch $url';
+                          
+                        }
+                      }, 
+                    )
+                      
                   ),
                   SizedBox(height: 10.0),
                 ],
               ),
             ),
-            // ChatAndAddToCart(),
           ],
         ),
       ),

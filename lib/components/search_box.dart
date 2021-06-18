@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:green_cosmetics/components/intro_screen.dart';
+import 'package:akira_glam/components/intro_screen.dart';
 
 import '../constants.dart';
 
@@ -11,7 +11,7 @@ class SearchBox extends StatelessWidget {
       margin: EdgeInsets.all(kDefaultPadding),
       padding: EdgeInsets.symmetric(
         horizontal: kDefaultPadding,
-        vertical: kDefaultPadding / 2, // 5 top and bottom
+        vertical: kDefaultPadding / 2, 
       ),
       decoration: BoxDecoration(
         color: kBackgroundColor,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:green_cosmetics/constants.dart';
-import 'package:green_cosmetics/screens/product/products_screen.dart';
+import 'package:akira_glam/constants.dart';
+import 'package:akira_glam/screens/product/products_screen.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -8,14 +8,12 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Green Cosmetics',
+      title: 'Akira Glam',
       theme: ThemeData(
-        // We set Poppins as our default font
         textTheme: GoogleFonts.poppinsTextTheme(Theme.of(context).textTheme),
         primaryColor: kPrimaryColor,
         accentColor: kPrimaryColor,
