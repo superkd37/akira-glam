@@ -25,5 +25,9 @@ flutter run
 ## Demo Video
 [![Watch the video](https://github.com/superkd37/akira-glam/blob/master/YT_Preview.png)](https://youtu.be/AoDBDY_YfPk)
 
+## Long description
+[Project Description](./DESCRIPTION.md)
+
+
 ## License
 This project is licensed under the Apache 2 License.
