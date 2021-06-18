@@ -23,4 +23,4 @@ flutter run
 ```
 
 ## Demo Video
-[![Watch the video]](https://youtu.be/AoDBDY_YfPk)
+[![Watch the video](https://github.com/superkd37/akira-glam/blob/master/YT_Preview.png)](https://youtu.be/AoDBDY_YfPk)
